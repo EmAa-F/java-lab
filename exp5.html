@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emaad Ansari - Portfolio</title>
+<style>
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+    background-color: #fafafa;
+    color: #2b2a2a;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #272626;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 5px 0 15px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Navigation Styles */
+nav {
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 6px 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #126fe9;
+    color: white;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    padding: 0 15px;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+    font-size: 1.2rem;
+}
+
+/* Skills Page */
+.skill-img {
+    margin: 15px;
+}
+
+#myhtml {
+    width: 100px;
+    height: 100px;
+}
+
+#mycss {
+    width: 100px;
+    height: 100px;
+}
+
+#myjs {
+    width: 180px;
+    height: 110px;
+}
+
+#myjava {
+    width: 100px;
+    height: 100px;
+}
+
+#mypy {
+    width: 160px;
+    height: 100px;
+}
+
+#myc {
+    width: 90px;
+    height: 100px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 650px) {
+    body {
+        padding: 0 15px;
+    }
+
+    #about {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 0.9rem;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>Emaad Ansari</h1>
+    <p>Artificial Intelligence & Data Science student</p>
+    <nav>
+        <a href="#" data-page="about" class="active">About</a>
+        <a href="#" data-page="skills">Skills</a>
+    </nav>
+</header>
+
+<main>
+    <!-- About Page -->
+    <div id="about-page" class="page">
+        <h2>About Me</h2>
+        <section id="about">
+            <div class="about-text">
+                <p>
+                    I'm a passionate Artificial Intelligence & Data Science student
+                    with an interest in web development, programming, and problem-solving.
+                    I enjoy exploring new technologies and building innovative solutions
+                    to real-world problems.
+                </p>
+                <p>
+                    My goal is to leverage AI and data science to create meaningful
+                    applications that make a positive impact. I'm constantly learning
+                    and expanding my skill set in various programming languages and
+                    modern development frameworks.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Skills Page -->
+    <div id="skills-page" class="page hidden">
+        <h2>Skills</h2>
+        <div class="image-container">
+            <svg id="myhtml" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <rect width="100" height="100" fill="#E34F26"/>
+                <text x="50" y="55" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">HTML5</text>
+            </svg>
+            
+            <svg id="mycss" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <rect width="100" height="100" fill="#1572B6"/>
+                <text x="50" y="55" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">CSS3</text>
+            </svg>
+            
+            <svg id="myjs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 110">
+                <rect width="180" height="110" fill="#F7DF1E"/>
+                <text x="90" y="60" font-family="Arial" font-size="20" font-weight="bold" fill="black" text-anchor="middle">JavaScript</text>
+            </svg>
+            
+            <svg id="myjava" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <rect width="100" height="100" fill="#007396"/>
+                <text x="50" y="55" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Java</text>
+            </svg>
+            
+            <svg id="mypy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100">
+                <rect width="160" height="100" fill="#3776AB"/>
+                <text x="80" y="55" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Python</text>
+            </svg>
+            
+            <svg id="myc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 100">
+                <rect width="90" height="100" fill="#A8B9CC"/>
+                <text x="45" y="55" font-family="Arial" font-size="20" font-weight="bold" fill="black" text-anchor="middle">C</text>
+            </svg>
+        </div>
+    </div>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const navLinks = document.querySelectorAll("nav a");
+    const pages = document.querySelectorAll(".page");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            
+            // Remove active class from all links
+            navLinks.forEach(l => l.classList.remove("active"));
+            
+            // Add active class to clicked link
+            link.classList.add("active");
+            
+            // Get the page to show
+            const pageToShow = link.getAttribute("data-page");
+            
+            // Hide all pages
+            pages.forEach(page => page.classList.add("hidden"));
+            
+            // Show selected page
+            document.getElementById(pageToShow + "-page").classList.remove("hidden");
+        });
+    });
+});
+</script>
+</body>
+</html>
