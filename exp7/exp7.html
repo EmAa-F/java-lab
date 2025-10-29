@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Color Change</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 50px;
+            transition: background-color 0.5s;
+        }
+        h1{
+            color: white;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        p{
+            color: white;
+            font-size: 20px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        #timer{
+            background:rgba(225, 255, 255,0.30);
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Color Changes Every 5 Seconds</h1>
+    <p> Watch the background change automatically!</p>
+    <p id="timer">Next change in: 5 seconds</p>
+    <hr>
+    <p><b>Made by Emaad</b></p>
+    <script src="scripts.js"></script>
+</body>
+</html>
